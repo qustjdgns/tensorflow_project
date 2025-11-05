@@ -1,6 +1,6 @@
-⚔️ League of Legends Hybrid Contribution Model (LoL 하이브리드 기여도 분석 모델)
 
-# League of Legends Hybrid Contribution Model
+
+# ⚔️ League of Legends Hybrid Contribution Model
 ## (LoL 하이브리드 기여도 분석 모델)
 
 ---
