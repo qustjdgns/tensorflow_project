@@ -118,6 +118,8 @@ $$
 - `matchId` 기준으로 라인별 평균 기여도를 집계  
 - 승리팀과 패배팀 간의 라인별 기여도 분포 차이를 시각적으로 비교  
 - ADC/SUP 라인은 BOTTOM으로 통합하여 분석
+  
+<img width="1200" height="700" alt="Figure_1" src="https://github.com/user-attachments/assets/caec11ce-c3e4-469e-acae-85ccf2cf0410" />
 
 ---
 
