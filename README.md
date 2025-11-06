@@ -146,7 +146,9 @@
 **예시 분석:**  
 패배팀(점선)의 **바텀(빨강)**은 초반 높은 기여도를 보였으나, 10분경부터 승리팀의 **미드(초록)**와 **정글(주황)**이 역전하며 게임을 주도했습니다.
 
- *(참조 이미지: 117.png - 5-4. Match ID 367 시간대별 기여도)*
+<img width="1500" height="800" alt="117" src="https://github.com/user-attachments/assets/be183b43-e0a5-46f0-a937-5c69b3c3ac89" />
+
+
 
 ---
 
@@ -160,18 +162,24 @@
 - **TOP (113.png)**  
   - 우측 상단(파랑): 높은 기여도·높은 기복 → ‘캐리형/공격형’  
   - 좌측 하단(노랑): 낮은 기여도·낮은 기복 → ‘안정형/수비형’
+    
+<img width="1200" height="900" alt="113" src="https://github.com/user-attachments/assets/304a8628-5129-4471-aae6-4afba9b86d00" />
 
 - **JUNGLE (114.png)**  
   - ‘기복이 심한 캐리형’과 ‘안정적인 운영형’으로 분화됨.
+    
+<img width="1200" height="900" alt="114" src="https://github.com/user-attachments/assets/8db9b5d7-29d9-47f5-bea7-7659a67530da" />
 
 - **MID (115.png)**  
   - 평균 기여도 1.25 기준으로 ‘안정/수비형’(보라, 노랑)과 ‘공격/캐리형’(파랑, 초록)으로 구분됨.
+    
+ <img width="1200" height="900" alt="115" src="https://github.com/user-attachments/assets/b2ee0649-04f0-4e2c-938a-abacc231ab64" />
 
 - **BOTTOM (116.png)**  
   - 기여도 1.5 초과: ‘캐리형’(초록, 노랑)  
   - 1.0~1.25: ‘안정형’(보라)
-
- *(참조 이미지: 113~116.png - 라인별 군집 분석)*
+ 
+<img width="1200" height="900" alt="116" src="https://github.com/user-attachments/assets/64ad45ce-7aa2-4902-ad23-232edd0f64b6" />
 
 ---
 
@@ -186,7 +194,8 @@
 - **패배팀(빨강)**은 **1.0 미만**으로 나타나,  
 모델의 ‘기여도’ 정의가 **승패와 강한 양의 상관관계**를 가짐을 확인했습니다.
 
-*(참조 이미지: 111.png - 5-1. 라인별 종합 기여도 분포)*
+<img width="1200" height="700" alt="111" src="https://github.com/user-attachments/assets/e3387868-54b0-474c-9fcb-44b610ff0560" />
+
 
 ---
 
@@ -197,7 +206,8 @@
 **해석:**  
 평균 기여도 **2.22**로 매우 높으며, 패배 경기에서도 대부분 **1.0 이상**으로 일관된 퍼포먼스를 보임 → **‘에이스형 플레이어’**로 해석.
 
- *(참조 이미지: 112.png - 5-2. '화내지말자#0722' 일관성 플롯)*
+<img width="1500" height="600" alt="112" src="https://github.com/user-attachments/assets/f912eb3c-77c8-4172-b34d-f67f4faae207" />
+
 
 ---
 
