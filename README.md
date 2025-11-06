@@ -166,7 +166,8 @@
  <br>   
 <img width="1200" height="900" alt="113" src="https://github.com/user-attachments/assets/304a8628-5129-4471-aae6-4afba9b86d00" />
 <br />
-
+  <br>
+  <br />
 - **JUNGLE (114.png)**  
   - ‘기복이 심한 캐리형’과 ‘안정적인 운영형’으로 분화됨.
     
@@ -174,13 +175,16 @@
 <img width="1200" height="900" alt="114" src="https://github.com/user-attachments/assets/8db9b5d7-29d9-47f5-bea7-7659a67530da" />
 <br />
 
+<br>
+  <br />
 - **MID (115.png)**  
   - 평균 기여도 1.25 기준으로 ‘안정/수비형’(보라, 노랑)과 ‘공격/캐리형’(파랑, 초록)으로 구분됨.
 
-     <br> 
+  <br> 
  <img width="1200" height="900" alt="115" src="https://github.com/user-attachments/assets/b2ee0649-04f0-4e2c-938a-abacc231ab64" />
 <br />
-
+<br>
+  <br />
 - **BOTTOM (116.png)**  
   - 기여도 1.5 초과: ‘캐리형’(초록, 노랑)  
   - 1.0~1.25: ‘안정형’(보라)
