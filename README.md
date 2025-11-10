@@ -294,7 +294,7 @@ matplotlib의 polar plot을 이용한 스파이더 차트 구성.
 
 결과 예시:
 
-<p align="center"> <img src="화내지말자.png" width="400"><br> <em>화내지말자#0722 vs 전체 평균 (라인별 기여도, mean)</em> </p>
+<img width="1500" height="600" alt="112" src="https://github.com/user-attachments/assets/f912eb3c-77c8-4172-b34d-f67f4faae207" />
 
 해석:
 
