@@ -293,7 +293,6 @@ Seaborn Barplot으로 라인별 Before/After 차이를 시각화.
 matplotlib의 polar plot을 이용한 스파이더 차트 구성.
 
 결과 예시:
-
 <img width="1500" height="600" alt="112" src="https://github.com/user-attachments/assets/f912eb3c-77c8-4172-b34d-f67f4faae207" />
 
 해석:
