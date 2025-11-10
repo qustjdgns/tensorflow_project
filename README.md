@@ -235,6 +235,7 @@
 특정 소환사의 라인별 평균 기여도를 전체 평균과 비교하여, 포지션별 강점과 약점을 시각적으로 파악합니다.
 
 ### 시각화
+<img width="600" height="600" alt="화내지말자" src="https://github.com/user-attachments/assets/a59b8ee3-4d61-481a-ab6b-688ce67aa0bb" />
 
 **해석**
 
