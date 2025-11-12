@@ -147,6 +147,8 @@ Timeline 피처들을 하나의 '성장력' 점수로 묶는 것이 타당한지
 
 본 분석은 **하이브리드 점수(T0.7 + F0.3)**를 사용하여, 특정 경기(Match ID 367)의 시간(분)별 4개 라인 기여도 변화를 시각화했습니다.
 
+<img width="1500" height="800" alt="시간대별 기여도" src="https://github.com/user-attachments/assets/f69af0b6-b926-4fe2-9faf-3c5b3e43eeab" />
+
 - 승리팀(실선)과 패배팀(점선)을 비교하여 흐름과 승리 요인을 분석합니다.
 - 예시 분석:  
   패배팀(점선)의 **바텀(빨강)**은 초반 높은 기여도를 보였으나, 10분경부터 승리팀의 미드(초록)와 정글(주황)이 역전하며 게임을 주도했습니다.
@@ -158,16 +160,20 @@ Timeline 피처들을 하나의 '성장력' 점수로 묶는 것이 타당한지
 - 예시 분석 (TOP)  
   - 우측 상단(파랑): 높은 기여도·높은 기복 → ‘캐리형/공격형’  
   - 좌측 하단(노랑): 낮은 기여도·낮은 기복 → ‘안정형/수비형’
+<img width="1200" height="900" alt="top 라인" src="https://github.com/user-attachments/assets/b612f95b-9a8b-47d5-a4cc-aca6c404811a" />
 
 - 예시 분석 (JUNGLE)  
   - ‘기복이 심한 캐리형’과 ‘안정적인 운영형’으로 분화됨.
+<img width="1200" height="900" alt="정글" src="https://github.com/user-attachments/assets/8b37622e-4459-453a-b2e6-6404222ab765" />
 
 - 예시 분석 (MID)  
   - 평균 기여도 1.25 기준으로 ‘안정/수비형’(보라, 노랑)과 ‘공격/캐리형’(파랑, 초록)으로 구분됨.
+<img width="1200" height="900" alt="미드" src="https://github.com/user-attachments/assets/718ebf14-1291-4167-b6ec-74356f6ff1cc" />
 
 - 예시 분석 (BOTTOM)  
   - 기여도 1.5 초과: ‘캐리형’(초록, 노랑)  
   - 1.0~1.25: ‘안정형’(보라)
+<img width="1200" height="900" alt="바텀" src="https://github.com/user-attachments/assets/3deb8025-8b5c-4a60-9bb7-8ae35794bf2a" />
 
 ---
 
@@ -176,6 +182,7 @@ Timeline 피처들을 하나의 '성장력' 점수로 묶는 것이 타당한지
 ### 7.1. 라인별 기여도 분포 (Violin Plot)
 
 본 분석은 Timeline-Only 점수를 사용하여, matchId 기준으로 4개 라인의 평균 기여도를 집계해 승리팀과 패배팀 간 분포를 비교합니다.
+<img width="1200" height="700" alt="라인별 종합 기여도" src="https://github.com/user-attachments/assets/2a468f91-5265-4645-a922-4eb5bab6c7b1" />
 
 - 해석:  
   - 승리팀(파랑)의 기여도 중앙값이 1.0 이상  
@@ -185,6 +192,7 @@ Timeline 피처들을 하나의 '성장력' 점수로 묶는 것이 타당한지
 ### 7.2. 개인별 일관성 플롯 (Scatter Plot)
 
  본 분석은 Timeline-Only 점수를 사용하여, `Bonnie#0314` 소환사의 경기별 기여도 추이를 시각화하고, 승/패 여부를 색상으로 표시합니다.
+<img width="1500" height="600" alt="소환사 종합 기여도" src="https://github.com/user-attachments/assets/c7d9ebda-9982-4c05-82e3-253b16dd6fd0" />
 
 - 해석:  
   평균 기여도 2.22로 매우 높으며, 패배 경기에서도 대부분 1.0 이상으로 일관된 퍼포먼스를 보임 → ‘에이스형 플레이어’로 해석.
@@ -195,6 +203,9 @@ Timeline 피처들을 하나의 '성장력' 점수로 묶는 것이 타당한지
 
 - 목적: Timeline-Only 점수를 사용하여, `Bonnie#0314` 소환사의 라인별 평균 기여도를 전체 평균과 비교하여, 포지션별 강점과 약점을 시각적으로 파악
 - 시각화: 레이더(스파이더) 차트
+  
+  <img width="600" height="600" alt="봄니vs 전체평균" src="https://github.com/user-attachments/assets/4a43cb46-35ee-4e00-9815-f40b0b695140" />
+
 - 해석:  
   - BOTTOM 포지션의 기여도가 전체 평균보다 높음  
   - JUNGLE, MID, TOP은 평균 이하로, 특정 라인 중심의 플레이 스타일  
