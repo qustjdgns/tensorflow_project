@@ -123,16 +123,43 @@
 | SUP | 0.4 | 0.4 | 0.2 | - | - |
 
 ---
+### 5-2 Timeline 피처간 상관성 검증
 
-### 5.2. Final Stats Score 가중치
+Timeline 피처 간 상관성을 검증하여 가중치와 피처 구성의 타당성을 확보하였다.  
+각 라인별로 `t_` 피처들 간의 평균 상관계수를 계산하였다.
 
-| 라인 | Solo Kills | KP | Vision | Turret DMG | Heal/Shield | CC Time | Obj. Stolen |
-|------|-------------|----|---------|-------------|--------------|-----------|-------------|
-| TOP | 0.4 | 0.1 | 0.1 | 0.4 | - | - | - |
-| JUNGLE | - | 0.4 | 0.4 | - | - | - | 0.2 |
-| MID | 0.3 | 0.5 | 0.1 | 0.1 | - | - | - |
-| ADC | - | 0.5 | 0.1 | 0.4 | - | - | - |
-| SUP | 0.2 | 0.2 | 0.4 | - | 0.2 | 0.2 | - |
+**분석 로그 요약 (`test.py` 실행 결과):**
+
+
+--- Analyzing Internal Correlations for TOP (Timeline) ---
+  [Timeline 근거] (피처 내적 평균 상관계수: 0.465)
+
+--- Analyzing Internal Correlations for JUNGLE (Timeline) ---
+  [Timeline 근거] (피처 내적 평균 상관계수: 0.431)
+
+--- Analyzing Internal Correlations for MID (Timeline) ---
+  [Timeline 근거] (피처 내적 평균 상관계수: 0.391)
+
+--- Analyzing Internal Correlations for ADC (Timeline) ---
+  [Timeline 근거] (피처 내적 평균 상관계수: 0.386)
+
+--- Analyzing Internal Correlations for SUP (Timeline) ---
+  [Timeline 근거] (피처 내적 평균 상관계수: 0.385)
+
+---
+### 5-3 Timeline 피처간 상관성 해석 요약
+
+| 라인 | 평균 상관계수 | 해석 |
+|------|----------------|------|
+| TOP | 0.465 | 성장 및 전투 관련 피처 간 균형적 상관 구조 |
+| JUNGLE | 0.431 | 경제, 경험, 정글CS 간 상호보완적 관계 |
+| MID | 0.391 | 전투 및 성장 지표 간 유의미한 상관성 |
+| ADC | 0.386 | 피해 중심 지표 간 중간 수준의 상관 구조 |
+| SUP | 0.385 | 지원형 변수 간 적정 상관성 확보 |
+
+피처 간 상관계수(0.38~0.46)는  
+과도한 중복 없이 상호 연관된 특성을 보여주며,  
+이는 가중치 균형과 피처 구성의 정당성을 뒷받침한다.
 
 ---
 
@@ -146,7 +173,8 @@
 **예시 분석:**  
 패배팀(점선)의 **바텀(빨강)**은 초반 높은 기여도를 보였으나, 10분경부터 승리팀의 **미드(초록)** 와 **정글(주황)** 이 역전하며 게임을 주도했습니다.
 
-<img width="1500" height="800" alt="117" src="https://github.com/user-attachments/assets/be183b43-e0a5-46f0-a937-5c69b3c3ac89" />
+<img width="1500" height="800" alt="시간대별 기여도" src="https://github.com/user-attachments/assets/42f6a440-9c2d-44ad-9e0d-2b87157579d9" />
+
 
 
 
@@ -163,7 +191,7 @@
   - 좌측 하단(노랑): 낮은 기여도·낮은 기복 → ‘안정형/수비형’
 
  <br>   
-<img width="1200" height="900" alt="113" src="https://github.com/user-attachments/assets/304a8628-5129-4471-aae6-4afba9b86d00" />
+<img width="1200" height="900" alt="top 라인" src="https://github.com/user-attachments/assets/92eab55c-6d17-4232-8ada-13f6ebf5e9d3" />
 <br />
 
 ---
@@ -174,7 +202,7 @@
 - ‘기복이 심한 캐리형’과 ‘안정적인 운영형’으로 분화됨.
     
   <br>    
-<img width="1200" height="900" alt="114" src="https://github.com/user-attachments/assets/8db9b5d7-29d9-47f5-bea7-7659a67530da" />
+<img width="1200" height="900" alt="정글" src="https://github.com/user-attachments/assets/aa7dd865-59c8-41d1-8fc1-79021a24a2bd" />
 <br />
 
 ---
@@ -185,7 +213,7 @@
 - 평균 기여도 1.25 기준으로 ‘안정/수비형’(보라, 노랑)과 ‘공격/캐리형’(파랑, 초록)으로 구분됨.
 
   <br> 
- <img width="1200" height="900" alt="115" src="https://github.com/user-attachments/assets/b2ee0649-04f0-4e2c-938a-abacc231ab64" />
+ <img width="1200" height="900" alt="미드" src="https://github.com/user-attachments/assets/c2408377-6772-425e-9bdf-1e0f432a19f5" />
 <br />
 
 ---
@@ -197,7 +225,7 @@
   - 1.0~1.25: ‘안정형’(보라)
 
   <br> 
-<img width="1200" height="900" alt="116" src="https://github.com/user-attachments/assets/64ad45ce-7aa2-4902-ad23-232edd0f64b6" />
+<img width="1200" height="900" alt="바텀" src="https://github.com/user-attachments/assets/d248c45a-db7b-4920-b6d6-5d9d58eeec0f" />
 <br />
 
 ---
@@ -213,19 +241,21 @@
 - **패배팀(빨강)** 은 **1.0 미만**으로 나타나,  
 모델의 ‘기여도’ 정의가 **승패와 강한 양의 상관관계**를 가짐을 확인했습니다.
 
-<img width="1200" height="700" alt="111" src="https://github.com/user-attachments/assets/e3387868-54b0-474c-9fcb-44b610ff0560" />
+<img width="1200" height="700" alt="라인별 종합 기여도" src="https://github.com/user-attachments/assets/8e6a9318-d21d-4366-ad1d-809d474072e7" />
+
 
 
 ---
 
 ### 7.2. 개인별 일관성 플롯 (Scatter Plot)
 
-특정 소환사(예: `화내지말자#0722`)의 경기별 기여도 추이를 시각화하고, **승/패 여부**를 색상으로 표시합니다.
+특정 소환사(예: `Bonnie#0314`)의 경기별 기여도 추이를 시각화하고, **승/패 여부**를 색상으로 표시합니다.
 
 **해석:**  
 평균 기여도 **2.22**로 매우 높으며, 패배 경기에서도 대부분 **1.0 이상**으로 일관된 퍼포먼스를 보임 → **‘에이스형 플레이어’** 로 해석.
 
-<img width="1500" height="600" alt="112" src="https://github.com/user-attachments/assets/f912eb3c-77c8-4172-b34d-f67f4faae207" />
+<img width="1500" height="600" alt="소환사 종합 기여도" src="https://github.com/user-attachments/assets/13a07464-d21d-4255-9e3d-2b42f4e3682f" />
+
 
 
 ---
@@ -234,7 +264,8 @@
 특정 소환사의 라인별 평균 기여도를 전체 평균과 비교하여, 포지션별 강점과 약점을 시각적으로 파악합니다.
 
 ### 시각화
-<img width="600" height="600" alt="화내지말자" src="https://github.com/user-attachments/assets/a59b8ee3-4d61-481a-ab6b-688ce67aa0bb" />
+<img width="600" height="600" alt="봄니vs 전체평균" src="https://github.com/user-attachments/assets/525ad54f-63b4-49b8-a38b-3f9dbb9ff65b" />
+
 
 **해석**
 
