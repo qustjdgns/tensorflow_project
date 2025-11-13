@@ -68,9 +68,7 @@
 - **[핵심] 측정 방식:**  
   오직 5-4(시간대별 곡선) 분석에서만, 분당 흐름과 최종 성과를 모두 반영하기 위해 아래의 하이브리드 공식을 예외적으로 사용합니다.
 
-\[
-\text{Contribution (5-4)} = (\text{Timeline Score} \times 0.7) + (\text{Final Stats Score} \times 0.3)
-\]
+Contribution (5-4) = (Timeline Score * 0.7) + (Final Stats Score * 0.3)
 
 - `Final Stats Score`는 `get_final_stats_score`가 최종 상대 피처(`rel_f_visionScore` 등)에 라인별 가중치를 적용하여 계산합니다.
 
