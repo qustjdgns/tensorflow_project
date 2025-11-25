@@ -1,4 +1,4 @@
-*** League of Legends Contribution Model (LoL 기여도 분석 모델) 최종 보고서 ***
+***League of Legends Contribution Model (LoL 기여도 분석 모델) 최종 보고서***
 
 ---
 *** 1. 프로젝트 개요 ***
