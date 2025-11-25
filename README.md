@@ -127,7 +127,7 @@ AUC Score: 0.72
 
 이는 모델의 통계적 유의성을 강력하게 입증되었다.
 
-## 4-6. 최상위 퍼포머 벤치마킹 (Radar Chart)
+## 4-6. 최상위 아마추어 vs 프로게이머 (Radar Chart)
 ---
 [그림 8] 여기에 코드 결과 Figure 6 (Radar Chart) 삽입  
 
