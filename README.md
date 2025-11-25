@@ -13,7 +13,7 @@
 
 ## 2-1. 왜 '상대 격차(Diff)' 인가?
 ---
-[그림 1] 벡터 연산(Vector Subtraction) 개념도
+
 
 <img width="3999" height="2232" alt="image" src="https://github.com/user-attachments/assets/3a7650b2-342a-41cc-b8d9-eaa39bf5df66" />
 
