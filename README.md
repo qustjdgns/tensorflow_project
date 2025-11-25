@@ -1,8 +1,9 @@
-###League of Legends Contribution Model (LoL 기여도 분석 모델) 최종 보고서###
+**League of Legends Contribution Model (LoL 기여도 분석 모델) 최종 보고서**
 
 ---
 
-***1. 프로젝트 개요***
+**1. 프로젝트 개요**
+
 이 프로젝트는 리그 오브 레전드(LoL) 경기 데이터를 분석하여, 단순한 KDA나 딜량 통계의 한계를 넘어 포지션별 역할과 경기 시간대별 흐름을 반영한 객관적인 기여도 평가 모델을 구축하는 것을 목표로 합니다.
 
 핵심 접근법:
