@@ -78,7 +78,7 @@ Timeline Score는 여러 시간대에서 다르게 나타나기 때문에,
 
 ## **Figure 1 — 라인별 기여도 분포 (Violin Plot)**  
 
-<img src="Figure_1.png" width="650"><img width="1200" height="700" alt="Figure_1" src="https://github.com/user-attachments/assets/16ee8a5f-735a-41f5-8d36-af987ca7d3c6" />
+<img width="1200" height="700" alt="Figure_1" src="https://github.com/user-attachments/assets/16ee8a5f-735a-41f5-8d36-af987ca7d3c6" />
 
 
 이 그래프는 각 라인(BOTTOM은 ADC+SUP 통합)의 기여도 분포를  
