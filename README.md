@@ -217,6 +217,8 @@ Final Contribution만으로 승/패를 예측했을 때의 결과다.
 ## **Figure 7 — 승패 예측: ROC Curve (AUC)**  
 
 <img width="1500" height="800" alt="Figure_7" src="https://github.com/user-attachments/assets/17e9966a-d969-4e3e-83e0-57fb94ab08cf" />
+<img width="600" height="500" alt="Figure_9" src="https://github.com/user-attachments/assets/61004f8b-d718-4f65-9e97-cb62d43512b3" />
+<img width="600" height="500" alt="Figure_10" src="https://github.com/user-attachments/assets/31bb26b1-c3cc-4b9a-ac22-2a097360469b" />
 
 AUC 약 **0.70**,  
 즉 기여도만으로도 상당히 높은 판별력을 가진다는 의미다.
