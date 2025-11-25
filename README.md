@@ -59,7 +59,8 @@ Gold & XP 는 솔로 킬, 로밍 성공, 포탑 채굴, 디나이(Deny) 등 모�
 ## 3-1. 모델 아키텍처 (Input - Model - Output)
 ---
 
-<img width="3333" height="2500" alt="image" src="https://github.com/user-attachments/assets/d1e979a5-05e0-4198-abaf-a995b9b4f28b" />
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/080f7b80-8da2-4329-be57-a1c60dcea94c" />
+
 
 
 1. Input ($\vec{x}$):  
