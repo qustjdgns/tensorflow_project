@@ -58,16 +58,18 @@ Gold & XP 는 솔로 킬, 로밍 성공, 포탑 채굴, 디나이(Deny) 등 모�
 
 ## 3-1. 모델 아키텍처 (Input - Model - Output)
 ---
-[그림 2] PCA 차원 축소 및 가중치 산출 과정
 
-Input ($\vec{x}$):  
+<img width="3333" height="2500" alt="image" src="https://github.com/user-attachments/assets/d1e979a5-05e0-4198-abaf-a995b9b4f28b" />
+
+
+1. Input ($\vec{x}$):  
 4차원 벡터 [Diff Gold, Diff XP, Diff CS, Rel Damage] (Standard Scaling 적용)
 
-Model (PCA):  
+2. Model (PCA):  
 각 라인별 데이터의 공분산을 분석하여, 정보를 가장 많이 담고 있는 제1 주성분(PC1) 축을 찾았다.  
 이 과정에서 각 라인별 최적 가중치($\vec{w}$) 가 데이터 기반으로 자동 산출된다.
 
-Output (Contribution):
+3. Output (Contribution):
 
 $$
 \text{Contribution} = \text{Normalized(PC1)} - (\text{Deaths} \times \text{Penalty})
