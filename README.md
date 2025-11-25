@@ -88,12 +88,17 @@
 
 데이터: 8~20분 스냅샷 평균 기여도.
 
+<img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/e77c583e-5e85-433d-85c1-7e859b064056" />
+
 해석:  
 승리팀: 기여도 중앙값이 1.1 내외에 위치하며, 상위권으로 꼬리가 깁니다. 이는 승리팀이 주요 시간대에 상대보다 더 많은 자원을 획득했음을 보여줍니다.  
 패배팀: 1.0 미만 구간에 대다수가 분포합니다.  
 결론: 스냅샷 기반 기여도 모델이 승패를 가르는 '체급 차이'를 명확히 설명합니다.
 
-### 5-2. 개인별 일관성 분석 (Bonnie#0314)  
+### 5-2. 개인별 일관성 분석 (Bonnie#0314) 
+
+<img width="1500" height="600" alt="image" src="https://github.com/user-attachments/assets/a18306f1-a43b-45c9-9422-8517bc0fb91b" />
+
 지표 해석:  
 내 평균: 1.01 (전체 평균 1.0과 일치).  
 평가: 승리/패배 여부와 관계없이 본인의 성장 지표는 평균(1.0)을 꾸준히 방어하는 안정적인 플레이어입니다.
@@ -105,6 +110,10 @@ MID 라인 해석:
 '하이 리스크 하이 리턴' 성향이 강함을 보여줍니다.
 
 ### 5-4. Match ID 367 시간대별 기여도 (승리 vs 패배)  
+
+<img width="1500" height="800" alt="image" src="https://github.com/user-attachments/assets/0ad134fb-51ea-4592-8c45-8656b8fa198c" />
+
+
 경기 흐름 분석:  
 승리팀 바텀: 게임 시작부터 끝까지 기여도 1.4~1.6 유지하며 상대를 압도했습니다.  
 패배팀 바텀: 0.8 아래로 무너졌습니다.  
@@ -115,10 +124,18 @@ MID 라인 해석:
 
 ## 6. 모델 성능 검증 (Model Validation) 
 6-1. 변별력 검증 (ROC Curve Analysis)  
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/1d4d7aca-e5cc-405f-a6da-84c2050136e8" />
+
+
 AUC Score: 0.593  
 해석: 개인의 8~20분 지표만으로 승패를 약 60% 설명할 수 있습니다. 5:5 팀 게임에서 개인 지표가 이 정도 설명력을 가진다는 것은 개인의 라인전 체급이 승률에 유의미한 영향을 미친다는 것을 의미합니다.
 
 ### 6-2. 예측 정확도 검증 (Confusion Matrix) 
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/42041d1a-5695-446b-ae1d-810595cba20d" />
+
+
 정확한 분류: 캐리(TP)와 역적(TN)을 잘 구분했습니다.  
 흥미로운 오분류(FP 2188건): 기여도는 높았으나 패배한 경우입니다. '졌잘싸' 유형으로, 본인의 지표는 훌륭했으나 팀 운이 따르지 않은 케이스를 의미합니다.
 
