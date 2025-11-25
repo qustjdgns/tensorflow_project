@@ -111,7 +111,8 @@ Final Contribution 하나로도 **약 63~70% 정확도**로 승패를 예측할 
 ---
 
 ## **Figure 1 — 라인별 기여도 분포 (Violin Plot)**  
-<img src="Figure_1.png" width="650">
+<img src="Figure_1.png" width="650"><img width="1200" height="700" alt="Figure_1" src="https://github.com/user-attachments/assets/16ee8a5f-735a-41f5-8d36-af987ca7d3c6" />
+
 
 이 그래프는 각 라인(BOTTOM은 ADC+SUP 통합)의 기여도 분포를  
 승리팀(파랑) / 패배팀(빨강)으로 구분해 나타낸 것이다.
@@ -127,7 +128,9 @@ Final Contribution 하나로도 **약 63~70% 정확도**로 승패를 예측할 
 ---
 
 ## **Figure 2 — 개인별 기여도 일관성 (Scatter Plot)**  
-<img src="Figure_2.png" width="650">
+
+<img width="1500" height="600" alt="Figure_2" src="https://github.com/user-attachments/assets/854b9bea-536d-4560-b08b-bf35cbb65c22" />
+
 
 한 플레이어의 여러 경기 기여도를 시간 순서대로 나열한 그래프다.
 
@@ -145,7 +148,8 @@ Final Contribution 하나로도 **약 63~70% 정확도**로 승패를 예측할 
 ---
 
 ## **Figure 3 — 군집 분석 (Mean vs Std)**  
-<img src="Figure_3.png" width="650">
+<img width="1200" height="900" alt="Figure_3" src="https://github.com/user-attachments/assets/a46dd863-b25b-4f79-8278-45424ada5e4f" />
+
 
 모든 챌린저 플레이어를 평균 기여도(성능)와 기여도 표준편차(안정성) 기준으로  
 군집화한 결과다.
@@ -161,7 +165,8 @@ Final Contribution 하나로도 **약 63~70% 정확도**로 승패를 예측할 
 ---
 
 ## **Figure 4 — 한 경기 시간대별 라인 흐름 (Hybrid Score)**  
-<img src="Figure_4.png" width="650">
+<img width="1200" height="900" alt="Figure_4" src="https://github.com/user-attachments/assets/8cd82666-c4b7-413f-8fe4-d0dfdb813302" />
+
 
 한 경기 내에서 각 라인의 기여도가  
 시간대에 따라 어떻게 변화하는지를 보여준다.
@@ -181,7 +186,8 @@ Final Contribution 하나로도 **약 63~70% 정확도**로 승패를 예측할 
 ---
 
 ## **Figure 5 — 레이더 차트 (소환사 vs 전체 평균)**  
-<img src="Figure_5.png" width="500">
+<img width="1200" height="900" alt="Figure_5" src="https://github.com/user-attachments/assets/ad2c7469-f11e-452e-baa7-e03016400651" />
+
 
 특정 플레이어가 각 라인에서  
 전체 평균 대비 어느 정도 기여하는지를 보여준다.
@@ -195,7 +201,8 @@ Final Contribution 하나로도 **약 63~70% 정확도**로 승패를 예측할 
 ---
 
 ## **Figure 6 — 승패 예측: Confusion Matrix**  
-<img src="Figure_6.png" width="500">
+<img width="1200" height="900" alt="Figure_6" src="https://github.com/user-attachments/assets/550deea3-6914-4afa-9e3b-0772570cefe8" />
+
 
 Final Contribution만으로 승/패를 예측했을 때의 결과다.
 
@@ -208,7 +215,8 @@ Final Contribution만으로 승/패를 예측했을 때의 결과다.
 ---
 
 ## **Figure 7 — 승패 예측: ROC Curve (AUC)**  
-<img src="Figure_7.png" width="500">
+
+<img width="1500" height="800" alt="Figure_7" src="https://github.com/user-attachments/assets/17e9966a-d969-4e3e-83e0-57fb94ab08cf" />
 
 AUC 약 **0.70**,  
 즉 기여도만으로도 상당히 높은 판별력을 가진다는 의미다.
@@ -217,7 +225,7 @@ AUC 약 **0.70**,
 
 # 6. 결론
 
-v5.2 Line Contribution Model은 다음을 달성했다.
+
 
 - 라인별·시간대별 편차 제거  
 - Timeline 기반의 공정한 기여도 산출  
