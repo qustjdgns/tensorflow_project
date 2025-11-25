@@ -67,7 +67,7 @@ $$Score = (Diff_{Gold} \times 0.4) + (Diff_{XP} \times 0.3) + (RoleScore \times 
 
 # 4. 스냅샷(Snapshot) 기반 평가 로직
 ---
-기여도는 전 구간 단순 평균이 아닌, **승패가 갈리는 결정적 순간(Critical Moments)**의 데이터를 추출하여 계산합니다.
+기여도는 전 구간 단순 평균이 아닌, **승패가 갈리는 결정적 순간(Critical Moments)** 의 데이터를 추출하여 계산합니다.
 
 스냅샷 시점: 8분, 10분, 12분, 15분, 20분
 
