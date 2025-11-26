@@ -85,9 +85,10 @@ $$
 ## 3-2. PCA 가중치 해석 및 도메인 지식 검증
 ---
 
-[그림 3] 여기에 코드 결과 plot_pca_weights 삽입
+<img width="1000" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/a63fecc4-7a07-4ac7-998a-64eb42b67136" />
 
-x축: 피처 / y축: 가중치 / 색상: 라인별 구분
+
+> x축: 피처 / y축: 가중치 / 색상: 라인별 구분
 
 결과 분석:
 
@@ -104,9 +105,11 @@ SUP: 상대적으로 Gold/XP 가중치가 낮게 산출되었으며, 모델은 �
 ---
 ## 4-1. 라인별 기여도 분포 (Violin Plot)
 ---
-[그림 3] 여기에 코드 결과 Figure 1 (Violin Plot) 삽입  
 
-x축: 포지션 / y축: 기여도 점수 / 파랑: 승리팀, 빨강: 패배팀  
+  <img width="1200" height="600" alt="Figure_2" src="https://github.com/user-attachments/assets/46df4986-e7c2-42ac-9c9c-70348cfee411" />
+
+
+> x축: 포지션 / y축: 기여도 점수 / 파랑: 승리팀, 빨강: 패배팀  
 
 결과: 승리 팀은 기여도 중앙값이 1.2 이상, 패배 팀은 0.8 이하에 분포한다. 
 
@@ -115,58 +118,66 @@ x축: 포지션 / y축: 기여도 점수 / 파랑: 승리팀, 빨강: 패배팀
 ---
 ## 4-2. 개인별 기여도 일관성 (Consistency Plot)
 ---
-[그림 4] 여기에 코드 결과 Figure 2 (Scatter Plot) 삽입  
 
-x축: 매치 번호 / y축: 기여도 / 점선: 기준선(1.0), 초록선: 내 평균  
+<img width="1200" height="500" alt="Figure_3" src="https://github.com/user-attachments/assets/aeb0be57-8698-42b0-8a8d-f020efefc7c3" />
 
-분석: 해당 소환사는 평균 1.0 이상의 기여도를 유지하고 있으며, 패배한 경기(빨간점) 에서도 0.8 이하로 떨어지는 경우가 드묾다.
+> x축: 매치 번호 / y축: 기여도 / 점선: 기준선(1.0), 초록선: 내 평균  
 
-해석: 이는 '버스' 를 타거나 '던지는' 플레이 없이 꾸준히 1인분 이상을 수행하는 **안정적인 유저(Solid Player)** 임을 보여준다.
+분석: 분석 대상(Bonnie#0314)의 평균 기여도는 0.62로 측정되었다.
+
+해석: 기준점(1.0) 대비 다소 낮은 수치를 기록하고 있으며, 특히 패배한 경기(Red dots)에서 기여도가 크게 낮아지는 경향이 있다. 이는 라인전 단계에서 안정성을 보완해야 함을 시사한다.
 
 ---
 ## 4-3. 소환사 유형 군집화 (Clustering)
 ---
-[그림 5] 여기에 코드 결과 Figure 3 (Cluster Plot) 삽입  
 
-x축: 평균 기여도(Performance) / y축: 표준편차(Risk)
+ <img width="1400" height="1027" alt="Figure_4" src="https://github.com/user-attachments/assets/077a82e8-40f3-47db-a16a-a3db01e6685b" />
+ 
+> x축: 평균 기여도(Performance) / y축: 표준편차(Risk)
 
-캐리형 (Risky Carry): 높은 평균 기여도 + 높은 표준편차 (공격적 플레이) 
+분석: 4개의 라인(TOP, JUNGLE, MID, BOTTOM) 모두에서 'High Mean, Low Std (안정형)' 군집과 'High Mean, High Std (캐리형)' 군집이 명확히 구분된다.
 
-안정형 (Solid): 높은 평균 기여도 + 낮은 표준편차 (이상적인 국밥형 플레이어)  
-
-결과: 본 모델을 통해 소환사의 성향을 4가지 유형으로 분류할 수 있었다.
+결과: 본 모델을 통해 단순 승률이 아닌, 플레이어의 성향(공격적/안정적)을 유형화할 수 있음을 확인했다.
 
 ---
 ## 4-4. 경기 시간대별 기여도 변화 (Match Timeline)
 ---
-[그림 6] 여기에 코드 결과 Figure 4 (Line Chart) 삽입  
 
-x축: 경기 시간(분) / y축: 누적 기여도 / 실선: 승리팀, 점선: 패배팀  
+<img width="1200" height="600" alt="Figure_5" src="https://github.com/user-attachments/assets/f59f4e7b-de82-4f11-a814-1c44f21087c5" />
+
+> x축: 경기 시간(분) / y축: 누적 기여도 / 실선: 승리팀, 점선: 패배팀  
 
 분석: 초반 8분 라인전 단계에서 발생한 미세한 격차(Diff) 가 15분, 20분으로 갈수록 스노우볼링되어 기여도 격차가 벌어지는 현상이 관측된다.
 
-의의: 스냅샷 기반의 타임라인 분석이 유효함을 입증되었다.
+의의: 8~20분의 스냅샷 데이터가 게임의 승패 흐름을 효과적으로 설명함을 입증한다.
 
 ---
 ## 4-5. 모델 검증 (ROC Curve & Confusion Matrix)
 ---
-[그림 7] 여기에 코드 결과 Figure 5 (ROC & CM) 삽입  
 
-AUC Score: 0.72  
+ <img width="1200" height="500" alt="Figure_6" src="https://github.com/user-attachments/assets/0644d1b9-3ae3-44e7-ac11-d65860d9c9fd" />
 
-결과 해석: 기여도 모델 학습 시 승패 정보를 사용하지 않았음에도, 산출된 기여도 점수만으로 승패를 72% 확률로 분류해냈다.  
+> AUC Score: 0.721  
 
-이는 모델의 통계적 유의성을 강력하게 입증되었다.
+결과 해석: 기여도 모델 학습 시 승패 정보를 사용하지 않았음에도, 
+
+산출된 기여도 점수만으로 승패를 **약 72%**의 확률로 정확히 분류해냈다. 
+
+이는 모델의 통계적 유의성을 강력하게 뒷받침한다.
 
 ---
 ## 4-6. 최상위 아마추어 vs 프로게이머 (Radar Chart)
 ---
-[그림 8] 여기에 코드 결과 Figure 6 (Radar Chart) 삽입  
 
-파란색: 분석 대상(Me) / 빨간색: Top Performer  
+<img width="600" height="600" alt="Figure_7" src="https://github.com/user-attachments/assets/ade34b94-efa2-4195-aea1-0b37a5cf98f4" />
 
-비교 분석: 일반 유저와 데이터셋 내 Top Performer(Pro급) 를 비교한 결과, 라인전 획득 능력(Gold/CS) 은 유사했으나  
-안정성(Death 관리) 측면에서 큰 차이가 발생했다.
+> 파란색: 분석 대상(Me) / 빨간색: Top Performer  
+
+비교 분석: 일반 유저(Bonnie#0314)와 데이터셋 내 Top Performer를 비교한 결과, 
+
+전체적인 육각형의 크기에서 차이가 발생한다. 특히 안정성 및 성장 지표 전반에서 Top Performer가 압도적인 우위를 점하고 있어,
+
+이를 벤치마킹한 플레이 개선이 필요하다.
 
 ---
 # 5. 결론 
