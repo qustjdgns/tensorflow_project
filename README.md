@@ -11,6 +11,8 @@
 
 방법론: PCA (주성분 분석) 를 활용한 비지도 학습 가중치 산출 (Label-Free Modeling)
 
+데이터 스냅샷 : [8, 10, 12, 15, 20]
+
 # 2. 데이터 전처리 및 피처 선정 (Feature Engineering)
 ---
 
@@ -109,7 +111,10 @@ SUP (보라색): 상대적으로 Gold/XP 가중치가 다른 라인보다 낮게
 ---
 
   <img width="1200" height="600" alt="Figure_2" src="https://github.com/user-attachments/assets/46df4986-e7c2-42ac-9c9c-70348cfee411" />
-
+  
+```
+사용한 스냅샷 = [8, 10, 12, 15, 20]
+```
 
 > x축: 포지션 / y축: 기여도 점수 / 파랑: 승리팀, 빨강: 패배팀  
 
